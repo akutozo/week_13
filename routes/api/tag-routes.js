@@ -20,11 +20,7 @@ router.get('/', (req, res) => {
           'stock',
           'category_id'
         ]
-      },
-        {
-          model: Category,
-          attributes: ['id', 'category_name']
-        },
+      }
     ]
   })
   .then(dbTagData => res.json(dbTagData))
