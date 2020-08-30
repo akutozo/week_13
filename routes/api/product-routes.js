@@ -70,7 +70,6 @@ router.get('/:id', (req, res) => {
 // create new product
 router.post('/', (req, res) => {
   Product.create({
-    id: req.body.id,
     product_name: req.body_product_name,
     price: req.body.price,
     stock: req.body.stock,
